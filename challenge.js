@@ -17,6 +17,7 @@ if (nilaiakhir >= 90) {
     keterangan = "Belum Lulus";
 }
 
+console.log("====================");
 console.log("HASIL PENILAIAN SISWA");
 console.log("====================");
 console.log("Nama Siswa: " + namaSiswa);
@@ -26,3 +27,4 @@ console.log("Nilai UTS: " + nilaiuts);
 console.log("Nilai UAS: " + nilaiuas);
 console.log("Nilai Akhir: " + nilaiakhir);
 console.log("Keterangan: " + keterangan);
+console.log("====================");
