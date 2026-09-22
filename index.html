@@ -1,12 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jobsheet 3 JS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Jobsheet 3 JS 01/09/2026</h1> 
+
+    <h1>📋 Jobsheet 3 JavaScript</h1>
+    <p class="subtitle">01 September 2026 &mdash; Latihan Kondisional &amp; Switch</p>
+
+    <div class="container">
+
+        <!-- Card 1: Cek Umur -->
+        <div class="card">
+            <h2><span class="icon">🎂</span> Cek Umur</h2>
+            <button class="btn" onclick="cekUmur()">Cek Umur</button>
+            <div class="result-box" id="hasil-umur"></div>
+        </div>
+
+        <!-- Card 2: Cek Bilangan -->
+        <div class="card">
+            <h2><span class="icon">🔢</span> Cek Bilangan</h2>
+            <button class="btn" onclick="cekBilangan()">Cek Bilangan</button>
+            <div class="result-box" id="hasil-bilangan"></div>
+        </div>
+
+        <!-- Card 3: Cek Nilai -->
+        <div class="card">
+            <h2><span class="icon">📊</span> Cek Grade Nilai</h2>
+            <button class="btn" onclick="cekNilai()">Cek Nilai</button>
+            <div class="result-box" id="hasil-nilai"></div>
+        </div>
+
+        <!-- Card 4: Cek Besar Kecil -->
+        <div class="card">
+            <h2><span class="icon">⚖️</span> Cek Besar Kecil</h2>
+            <button class="btn" onclick="cekBesarKecil()">Cek Besar Kecil</button>
+            <div class="result-box" id="hasil-besarkecil"></div>
+        </div>
+
+        <!-- Card 5: Menu Data (Switch) -->
+        <div class="card">
+            <h2><span class="icon">📁</span> Menu Data (Switch)</h2>
+            <div class="data-menu">
+                <button onclick="pilihanData('1')" id="btn-data-1">1. Data Siswa</button>
+                <button onclick="pilihanData('2')" id="btn-data-2">2. Data Guru</button>
+                <button onclick="pilihanData('3')" id="btn-data-3">3. Data Kelas</button>
+                <button onclick="pilihanData('4')" id="btn-data-4">4. Keluar</button>
+            </div>
+            <div class="result-box" id="hasil-data"></div>
+        </div>
+
+        <!-- Card 6: Challenge - Penilaian Siswa -->
+        <div class="card">
+            <h2><span class="icon">🏆</span> Challenge — Penilaian Siswa</h2>
+            <button class="btn" onclick="hitungChallenge()">Mulai Penilaian</button>
+            <div class="result-box" id="hasil-challenge"></div>
+        </div>
+
+    </div>
+
+    <!-- Hanya load app.js yang sudah berisi semua fungsi -->
     <script src="app.js"></script>
+
+    <footer>
+        Jobsheet 3 JavaScript &mdash; <span>Shaquille Rizky A</span>
+    </footer>
+
 </body>
 </html>
